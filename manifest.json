@@ -1,6 +1,6 @@
 {
-    "name" : "外卖专享优惠",
-    "appid" : "",
+    "name" : "福利多领",
+    "appid" : "__UNI__54FA33A",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -42,10 +42,12 @@
     },
     "quickapp" : {},
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx4eaac1273d2b7ab3",
         "setting" : {
-            "urlCheck" : true
-        }
+            "urlCheck" : true,
+            "minified" : true
+        },
+        "permission" : {}
     },
     "h5" : {
         "optimization" : {

@@ -111,8 +111,8 @@ export default {
 			//#ifdef MP-WEIXIN
 			if(this.couponList[i].minapp){
 				wx.navigateToMiniProgram({
-				  appId: this.couponList[i].minapp.appid,
-				  path: this.couponList[i].minapp.path,
+					appId: this.couponList[i].minapp.appid,
+					path: this.couponList[i].minapp.path,
 				  success(res) {
 					// 打开成功
 				  }
@@ -121,13 +121,32 @@ export default {
 			//#endif
 		},
 		getHome(){
-			uni.request({
-			    url: getApp().globalData.api.home,
-			    success: (res) => {
-			        this.tabs = res.data.data.tabs
-					this.coupons = res.data.data.coupons
-					this.changeTab(0)
-			    }
+			// uni.request({
+			//     url: getApp().globalData.api.home,
+			//     success: (res) => {
+			//         this.tabs = res.data.data.tabs
+			// 		this.coupons = res.data.data.coupons
+			// 		this.changeTab(0)
+			//     }
+			// }); 
+			uniCloud.callFunction({
+				name: 'api',
+				data: {
+					path: '/home',
+				}
+			}).then((res) => {
+				uni.hideLoading()
+				this.tabs = res.result.data.tabs
+				this.coupons = res.result.data.coupons
+				this.changeTab(0)
+				console.log(res)
+			}).catch((err) => {
+				uni.hideLoading()
+				uni.showModal({
+					content: `网络错误`,
+					showCancel: false
+				})
+				console.error(err)
 			});
 		}
 	}
@@ -163,7 +182,7 @@ page {
 				justify-content: space-between;
 				.left {
 					height: 116rpx;
-					width: 400rpx;
+					width: 430rpx;
 					display: flex;
 					align-items: center;
 					justify-content: space-between;

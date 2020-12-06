@@ -9,36 +9,48 @@
 				"name": "饿了么红包",
 				"icon": "/static/coupon/ele.png",
 				"bannerPic": "/static/coupon/ele_banner.png",
-				"url": "https://s.click.ele.me/frZOjvu",
+				"url": "https://s.click.ele.me/hGPIetu",
 				"type": 1,
 				"tabId": 1,
 				"minapp": {
 					"appid": "wxece3a9a4c82f58c9",
-					"path": "pages/sharePid/web/index?scene=https://s.click.ele.me/wR9ecuu"
+					"path": "pages/sharePid/web/index?scene=https://s.click.ele.me/hGPIetu"
+				}
+			},
+			{
+				"name": "饿了么果蔬红包",
+				"icon": "/static/coupon/ele.png",
+				"bannerPic": "/static/coupon/ele_guosu.png",
+				"url": "https://s.click.ele.me/hGPIetu",
+				"type": 1,
+				"tabId": 1,
+				"minapp": {
+					"appid": "wxece3a9a4c82f58c9",
+					"path": "pages/sharePid/web/index?scene=https://s.click.ele.me/hGPIetu"
 				}
 			},
 			{
 				"name": "美团外卖红包",
 				"icon": "/static/coupon/meituan.png",
 				"bannerPic": "/static/coupon/meituan_banner.png",
-				"url": "https://runion.meituan.com/url?key=cd23768d09c339d1641b2738df39aa67&url=https%3A%2F%2Fi.meituan.com%2Fawp%2Fhfe%2Fblock%2Fa945391288b790d558b7%2F78716%2Findex.html%3Fappkey%3Dcd23768d09c339d1641b2738df39aa67%3Ajuhe&sid=juhe",
+				"url": "https://activityunion-marketing.meituan.com/mtzcoupon/index.html?channel=union&utm_source=60413&cpsMedia=1334675609611202640",
 				"type": 1,
 				"tabId": 2,
 				"minapp": {
 					"appid": "wxde8ac0a21135c07d",
-					"path": "/index/pages/h5/h5?weburl=https%3A%2F%2Frunion.meituan.com%2Furl%3Fkey%3D591ec05930c57331c1212b936e6785c1%26url%3Dhttps%253A%252F%252Fi.meituan.com%252Fawp%252Fhfe%252Fblock%252Fa13b87919a9ace9cfab4%252F89400%252Findex.html%253Fappkey%253D591ec05930c57331c1212b936e6785c1%253A000001%26sid%3D000001&lch=cps:waimai:5:591ec05930c57331c1212b936e6785c1:000001&f_token=1&f_userId=1"
+					"path": "/index/pages/h5/h5?weburl=https://activityunion-marketing.meituan.com/mtzcoupon/index.html?channel=union&utm_source=60413&cpsMedia=1334675609611202640"
 				}
 			},
 			{
-				"name": "三只松鼠大礼包",
-				"icon": "/static/coupon/jd.png",
-				"bannerPic": "/static/coupon/sanzhisongshu.png",
-				"url":"https://u.jd.com/tFDejq",
+				"name": "9元话费券",
+				"icon": "/static/coupon/meituan.png",
+				"bannerPic": "/static/coupon/meituan_banner.png",
+				"url": "https://view.meituan.com/share/inviter/17616fe08ccc7?uid=622956020&yaoxin=1&utm_fromapp=saoyisao",
 				"type": 0,
-				"tabId": 3,
+				"tabId": 2,
 				"minapp": {
-					"appid": "wx91d27dbf599dff74",
-					"path": "pages/proxy/union/union"
+					"appid": "wxde8ac0a21135c07d",
+					"path": "/index/pages/h5/h5?weburl=https://view.meituan.com/share/inviter/17616fe08ccc7?uid=622956020&yaoxin=1&utm_fromapp=saoyisao"
 				}
 			}
 		],
@@ -68,11 +80,6 @@
 				"icon": "/static/meituan.png",
 				"text": "美团",
 				"tabId": 2
-			},
-			{
-				"icon": "/static/jd.png",
-				"text": "京东",
-				"tabId": 3
 			}
 		],
 		"schema": {
